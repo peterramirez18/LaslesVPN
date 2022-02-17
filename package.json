@@ -1,5 +1,6 @@
 {
   "name": "laslesvpn",
+  "homepage": "https://peterramirez18.github.io/LaslesVPN",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
