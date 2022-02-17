@@ -1,0 +1,83 @@
+@import '../../scss/global-imports.scss';
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: rem(46); 
+    margin-bottom: rem(88);
+    
+    // &__logo{}
+
+    .nav{
+        display: flex;
+        gap: rem(40);
+
+        @media (max-width: $breakpoint-medium) {
+            display: none;
+        }
+        
+        
+        &__item{
+            color: var(--text2);
+            font-size: rem(16);
+
+            &:hover{
+                color:  var(--pink);
+                cursor: pointer;
+            }
+        }
+
+        &__item--selected{
+            @extend .nav__item;
+        }
+
+    }
+
+    .sing{
+        display: flex;
+        gap: rem(30);
+        align-items: center;
+
+        @media (max-width: $breakpoint-medium) {
+            display: none;
+        }
+        
+        font-weight: 600;
+    }
+
+    .hamburguer{
+        display: none;
+
+        @media (max-width: $breakpoint-medium) {
+            display: flex;
+        }
+    }
+}
+
+.navbar--open{
+
+    .nav{
+        @media (max-width: $breakpoint-medium) {
+            display: flex;
+            position: absolute;
+           
+            flex-direction: column;
+            text-align: right;
+            top: 20%;
+            right: rem(20);
+        }
+    }
+
+    .sing{
+        
+        @media (max-width: $breakpoint-medium) {
+            display: flex;
+            position: absolute;
+            top: 70%;
+            right: rem(20);
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import '../../scss/global-imports.scss';
+
+.plans{
+    align-items: center;
+    text-align: center;
+    margin-bottom: rem(140);
+   
+    &__paragraph{
+        margin-bottom: rem(60);
+    }
+
+    .options{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: rem(50);
+
+        @media (max-width: $breakpoint-medium) {
+            grid-template-columns: 1fr;
+        }
+
+        
+        .option{
+            border: solid 2px var(--gray);
+            padding: rem(79) rem(60) rem(50) rem(60);
+            border-radius: rem(10);
+
+            @media (max-width: $breakpoint-medium) {
+                padding: rem(40) rem(60) rem(40) rem(60);
+            }
+
+            &__icon{
+                margin-bottom: rem(30);
+            }
+
+            &__title{
+                margin-bottom: rem(30);
+                font-weight: 600;
+                font-size: rem(18);
+            }
+
+            &__list{
+                height: rem(230);
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                gap: rem(24);
+
+                @media (max-width: $breakpoint-medium) {
+                    height: auto;
+                }
+
+                &__item{
+                    display: flex;
+                    align-items: center;
+                    gap: rem(25);
+                }
+            }
+        }
+
+        .option--selected{
+            @extend .option;
+            border: solid 2px var(--red);
+
+            .btn--rounded{
+                background-color: var(--red) !important;
+                color: var(--white);
+            }
+        }
+    }
+
+    .priceandbtn{
+        margin-top: rem(55);
+        &__text{
+            font-size:  rem(25);
+            font-weight: 600;
+            margin-bottom: rem(20);
+            & > span{
+                font-weight: 300;
+            }
+        }
+    }
+}

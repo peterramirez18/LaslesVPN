@@ -1,0 +1,62 @@
+@import "../../scss/global-imports.scss";
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+
+    color:var(--text2);
+    padding-top: rem(180);
+    padding-bottom: rem(100);
+
+    @media (max-width: $breakpoint-medium) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .footer__col1{
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+
+        p > span{
+            font-weight: 600;
+        }
+    }
+
+    &__redes{
+        display: flex;
+        gap: rem(20);
+
+        @media (max-width: $breakpoint-medium) {
+            margin: 0 auto;
+        }
+
+        & > div{
+            width: rem(33.6);
+            height: rem(33.6);
+            background-color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            filter: drop-shadow(0px 13px 36px rgba(17, 19, 35, 0.08));
+
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+
+        li{
+            &:first-child{
+                font-weight: 600;
+                color: var(--text);
+            }
+        }
+    }
+}

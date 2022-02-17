@@ -1,0 +1,58 @@
+@import '../../scss/global-imports.scss';
+
+.info{
+    width: 100%;
+    height: rem(200);
+    border-radius: rem(10);
+    padding: rem(37.21) rem(91);
+    margin-bottom: rem(95);
+
+    background: var(--white);
+    box-shadow: 0 rem(70) rem(99) rgba(13, 16, 37, 0.1);
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $breakpoint-medium) {
+        flex-direction: column;
+        align-items: center;
+        gap: rem(50);
+
+        height: rem(400);
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: rem(36);
+       
+
+        &:nth-child(2){
+            height: 100%;
+            border-left: solid 1px var(--gray);
+            border-right: solid 1px var(--gray);
+            padding: 0 rem(134) 0 rem(113);
+
+            @media (max-width: $breakpoint-medium) {
+                border: none;
+                padding: 0;
+            }
+        }
+
+        &__text{
+            &__number{
+                font-weight: 600;
+                font-size: rem(25);
+            }
+
+            &__type{
+                font-size: rem(20);
+            }
+        }
+    }
+    
+
+    
+}

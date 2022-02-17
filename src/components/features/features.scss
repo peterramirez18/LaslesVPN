@@ -1,0 +1,53 @@
+@import '../../scss/global-imports.scss';
+
+.features{
+    margin-bottom: rem(205);
+
+    @media (max-width: $breakpoint-medium)  {
+        grid-template-columns: 1fr !important;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        width: fit-content;
+        margin: 0 auto rem(100) auto;
+    }
+
+    &__image{
+        &>img{
+            transform: translateX(3.5rem);
+            @media (max-width: $breakpoint-medium) {
+                transform: translateX(rem(0));
+                width: 100%;
+            }
+        }  
+    }
+
+    &__info{
+        margin-bottom: rem(8);
+        transform: translateX(rem(230));
+
+        @media (max-width: $breakpoint-medium) {
+            transform: translateX(rem(0));
+        }
+        
+        &__paragraph{
+            margin-bottom: rem(30);
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            gap: rem(25);
+            & > div{
+                display: flex;
+                gap: rem(12);
+                
+                @media (max-width: $breakpoint-medium)  {
+                    justify-content: center;
+                }
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../scss/global-imports.scss';
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: rem(10);
+    padding: rem(37.21) rem(91);
+
+    background: var(--white);
+    box-shadow: 0 rem(70) rem(99) rgba(13, 16, 37, 0.1);
+    z-index: 3;
+
+    transform: translateY(rem(100));
+    
+
+    @media (max-width: $breakpoint-medium) {
+       flex-direction: column;
+       padding: 2rem;
+       text-align: center;
+       gap: 2rem;
+    }
+}

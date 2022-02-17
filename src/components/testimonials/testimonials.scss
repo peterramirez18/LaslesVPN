@@ -1,0 +1,66 @@
+@import '../../scss/global-imports.scss';
+
+.testimonials{
+    align-items: center;
+    text-align: center;
+    // margin-bottom: rem(150);
+
+    position: relative;
+   
+    &__paragraph{
+        margin-bottom: rem(64);
+    }
+
+    .cards{
+        text-align: left;
+        display: flex;
+        gap: rem(50);
+        padding-left: rem(1);
+        overflow-x: hidden;
+        scroll-behavior: auto;
+        
+        @media (max-width: $breakpoint-medium) {
+            // flex-direction: column;
+        }
+        
+        // position: absolute;
+
+        .card{
+            min-width: rem(400);
+            height: rem(230);
+            border-radius: rem(10);
+            background: transparent;
+            border: 2px solid var(--gray2);
+            padding: rem(30);
+
+            animation-iteration-count: infinite;
+            animation-name: movinginfinite;
+            animation-duration:20s;
+            animation-timing-function: linear;
+
+            &__header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: rem(12);
+
+                .profile{
+                    display: flex;
+                    align-items: center;
+                    gap: rem(20);
+
+                    &__nameandcity{
+                        &__name{
+                            font-weight: 600;
+                        }
+
+                        &__city{
+                            font-weight: 300;
+                            color: var(--text2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

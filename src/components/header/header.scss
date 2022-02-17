@@ -1,0 +1,43 @@
+@import '../../scss/global-imports.scss';
+
+
+.ejemplo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+    display: none;
+}
+.header{
+    margin-bottom: rem(100);
+    
+    &__info{
+
+        &__title{
+            margin-bottom: rem(20);
+            span{
+                font-weight: 700;
+            }
+        }
+
+        &__paragraph{
+            margin-bottom: rem(60);
+        }
+
+        button{
+            margin-bottom: rem(33);
+        }
+    }
+
+    &__image{
+        &>img{
+            transform: translateX(rem(70));
+            @media (max-width: $breakpoint-medium) {
+                transform: translateX(rem(0));
+                width: 100%;
+            }
+        }  
+    }
+}

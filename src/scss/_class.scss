@@ -1,0 +1,44 @@
+.btn--normal{
+    border: none;
+    background-color: var(--red);
+    border-radius: rem(10);
+    padding: rem(17) rem(75);
+    font-weight: 800;
+    color: var(--white);
+    font-size: rem(16);
+    position: relative;
+    transition: all 3s ease-out;
+
+    &:hover{
+        
+        &::before{
+            content: '';
+            position: absolute;
+            width: rem(211.83);
+            height: rem(60);
+    
+            right: rem(20);
+            top: rem(10);
+    
+            background: rgba(245, 56, 56, 0.35);
+            filter: blur(30px);
+            border-radius: 10px;
+        }
+        cursor: pointer;
+    }
+}
+
+.btn--rounded{
+    color: var(--pink);
+    padding: rem(13) rem(45);
+    border: solid rem(2) var(--red);
+    border-radius: rem(100);
+    transition: all 300ms ease-out;
+    font-weight: 600;
+
+    &:hover{
+        background-color: var(--red);
+        color: var(--white);
+        cursor: pointer;
+    }
+}
