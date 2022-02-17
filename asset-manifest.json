@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/LaslesVPN/static/css/main.9e2c1bdd.css",
+    "main.js": "/LaslesVPN/static/js/main.044f26f4.js",
+    "static/media/Landingpage.png": "/LaslesVPN/static/media/Landingpage.57f871ac81a4defd85bd.png",
+    "static/media/globalnetwork-image.png": "/LaslesVPN/static/media/globalnetwork-image.f5188b64a6b761673f4c.png",
+    "static/media/Illustration1.png": "/LaslesVPN/static/media/Illustration1.a1d2a45d378bfa07cee9.png",
+    "static/media/illustration-features.png": "/LaslesVPN/static/media/illustration-features.212eac055deec1f94971.png",
+    "static/media/illustration-premium.png": "/LaslesVPN/static/media/illustration-premium.51b760cba4afd97caba8.png",
+    "static/media/illustration-standard.png": "/LaslesVPN/static/media/illustration-standard.dd490dcac728f3738631.png",
+    "static/media/illustration-free.png": "/LaslesVPN/static/media/illustration-free.bfbf12f391aa2b003091.png",
+    "static/media/spotify.svg": "/LaslesVPN/static/media/spotify.1a5f46ee9fa88fd2ef5ab1446a9ec474.svg",
+    "static/media/amazon.svg": "/LaslesVPN/static/media/amazon.76f0abd56e3635dbb5659ff749ddf7f2.svg",
+    "static/media/reddit.svg": "/LaslesVPN/static/media/reddit.9868112fb29f19d70c8b33ec63a9f464.svg",
+    "static/media/discord.svg": "/LaslesVPN/static/media/discord.78562759a712f9a9d84b84b966b38a6f.svg",
+    "index.html": "/LaslesVPN/index.html",
+    "static/media/netflix.svg": "/LaslesVPN/static/media/netflix.463c6dfb951c0dd3e44def5991bb1448.svg",
+    "static/media/star-icon.svg": "/LaslesVPN/static/media/star-icon.fab04a988fd5b4cc0f157c1cdf54135e.svg",
+    "main.9e2c1bdd.css.map": "/LaslesVPN/static/css/main.9e2c1bdd.css.map",
+    "main.044f26f4.js.map": "/LaslesVPN/static/js/main.044f26f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e2c1bdd.css",
+    "static/js/main.044f26f4.js"
+  ]
+}
